@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">GitHub Repo</string>
+    <string name="day_night">Claro/Escuro Tema</string>
+    <string name="content_description_more">Claro Escuro Tema </string>
+    <string name="default_error_message">Nâo foi possível obter os repositórios.\nTente novamente</string>
 </resources>
