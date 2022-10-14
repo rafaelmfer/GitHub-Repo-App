@@ -22,6 +22,10 @@ class HomeViewModel(
     private val reposMutableLiveData = MutableLiveData<State<GitHubRepositoriesModel>>()
     val reposLiveData: LiveData<State<GitHubRepositoriesModel>> get() = reposMutableLiveData
 
+    init {
+        getRepos()
+    }
+
     fun getRepos() {
         reposMutableLiveData.postValue(State.Loading)
         viewModelScope.launch {
