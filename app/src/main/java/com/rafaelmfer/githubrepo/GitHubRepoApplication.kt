@@ -1,6 +1,7 @@
 package com.rafaelmfer.githubrepo
 
 import android.app.Application
+import com.rafaelmfer.githubrepo.di.DatabaseModule
 import com.rafaelmfer.githubrepo.di.NetworkModule
 import com.rafaelmfer.githubrepo.di.PresentationModule
 import com.rafaelmfer.githubrepo.di.RepositoryModule
@@ -16,6 +17,7 @@ class GitHubRepoApplication : Application() {
             androidContext(this@GitHubRepoApplication)
             modules(
                 NetworkModule.module,
+                DatabaseModule.module,
                 RepositoryModule.module,
                 PresentationModule.module,
             )

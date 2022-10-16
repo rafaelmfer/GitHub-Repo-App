@@ -6,6 +6,6 @@ import org.koin.dsl.module
 
 object RepositoryModule {
     val module = module {
-        factory<IGitHubRepository> { GitHubRepository(get()) }
+        factory<IGitHubRepository> { GitHubRepository(get(), get()) }
     }
 }
