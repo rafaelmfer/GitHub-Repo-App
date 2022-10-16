@@ -2,10 +2,12 @@ package com.rafaelmfer.githubrepo.presentation
 
 import android.content.res.Configuration
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.rafaelmfer.githubrepo.R
 import com.rafaelmfer.githubrepo.data.repository.State
 import com.rafaelmfer.githubrepo.databinding.ActivityHomeBinding
@@ -22,6 +24,9 @@ class HomeActivity : AppCompatActivity() {
 
     private val reposAdapter = ReposAdapter()
 
+    private var shouldIncrementPage = true
+    private var totalResults = 1
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -35,8 +40,14 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun ActivityHomeBinding.observables() {
-        viewModel.reposLiveData.observe(this@HomeActivity) {
-            handlerReposState(it)
+        viewModel.run {
+            reposLiveData.observe(this@HomeActivity) {
+                handlerReposState(it)
+            }
+
+            loadMoreLiveData.observe(this@HomeActivity) {
+                handlerLoadMoreReposState(it)
+            }
         }
     }
 
@@ -61,8 +72,20 @@ class HomeActivity : AppCompatActivity() {
 
     private fun ActivityHomeBinding.setupRecycler() {
         rvRepos.apply {
-            addItemDecoration(DividerItemDecoration(context, LinearLayoutManager.VERTICAL))
             adapter = reposAdapter
+            addItemDecoration(DividerItemDecoration(context, LinearLayoutManager.VERTICAL))
+            addOnScrollListener(object : RecyclerView.OnScrollListener() {
+                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                    val forthLastView = layoutManager?.findViewByPosition(reposAdapter.itemCount - 4)?.let {
+                        layoutManager?.isViewPartiallyVisible(it, false, true)
+                    }
+                    if (reposAdapter.itemCount <= totalResults && shouldIncrementPage && (forthLastView == true)) {
+                        viewModel.incrementPage()
+                        viewModel.loadMoreRepos()
+                        shouldIncrementPage = false
+                    }
+                }
+            })
         }
     }
 
@@ -70,23 +93,37 @@ class HomeActivity : AppCompatActivity() {
         when (state) {
             is State.Loading -> {
                 pbRepos.visible
-                rvRepos.gone
                 tvReposError.gone
             }
             is State.Success -> {
-                rvRepos.visible
-                reposAdapter.updateRepoList(state.model.items)
                 pbRepos.gone
+                reposAdapter.addMoreItems(state.model.items)
+                totalResults = state.model.totalCount
                 tvReposError.gone
             }
             is State.Error -> {
                 pbRepos.gone
-                rvRepos.gone
                 tvReposError.apply {
                     visible
                     if (!state.message.isNullOrBlank()) text = state.message
                 }
             }
+        }
+    }
+
+    private fun handlerLoadMoreReposState(state: State<GitHubRepositoriesModel>) {
+        when (state) {
+            is State.Success -> {
+                reposAdapter.addMoreItems(state.model.items)
+                totalResults = state.model.totalCount
+                shouldIncrementPage = true
+            }
+            is State.Error -> {
+                viewModel.decrementPage()
+                shouldIncrementPage = true
+                Toast.makeText(this@HomeActivity, "Error getting more repos", Toast.LENGTH_SHORT).show()
+            }
+            else -> {}
         }
     }
 }

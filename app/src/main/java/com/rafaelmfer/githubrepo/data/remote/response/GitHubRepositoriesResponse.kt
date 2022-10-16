@@ -16,7 +16,7 @@ data class ItemResponse(
     @SerializedName("private") val `private`: Boolean,
     @SerializedName("owner") val owner: OwnerResponse,
     @SerializedName("html_url") val htmlUrl: String,
-    @SerializedName("description") val description: String,
+    @SerializedName("description") val description: String?,
     @SerializedName("fork") val fork: Boolean,
     @SerializedName("url") val url: String,
     @SerializedName("forks_url") val forksUrl: String,
