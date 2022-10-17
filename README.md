@@ -105,9 +105,9 @@ Shows a list of github's repositories filtered by kotlin language and order by d
 
 - **IDE - Android Studio Dolphin 2021.3.1**
 
-- **Gradle 7.3.0**
+- **Gradle 7.3.1**
 
-- **Kotlin 1.7.10**
+- **Kotlin 1.7.20**
 
 - **AAC Android Architecture Components** *using guide Google JetPack*
 
