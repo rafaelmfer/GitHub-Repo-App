@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MaterialToolbar.DayNight" parent="Widget.MaterialComponents.Toolbar.PrimarySurface">
+        <item name="titleTextColor">@android:color/white</item>
+        <item name="android:background">@color/grey_nero</item>
+    </style>
+</resources>
