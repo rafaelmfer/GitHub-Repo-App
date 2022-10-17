@@ -2,7 +2,6 @@ package com.rafaelmfer.githubrepo.domain.model
 
 data class GitHubRepositoriesModel(
     val totalCount: Int,
-    val incompleteResults: Boolean,
     val items: List<ItemModel>
 )
 
