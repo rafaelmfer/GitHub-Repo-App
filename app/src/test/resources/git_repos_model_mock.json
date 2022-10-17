@@ -1,0 +1,306 @@
+{
+  "totalCount": 943251,
+  "incompleteResults": false,
+  "items": [
+    {
+      "description": "Square’s meticulous HTTP client for the JVM, Android, and GraalVM.",
+      "forksCount": 8950,
+      "htmlUrl": "https://github.com/square/okhttp",
+      "id": 5152285,
+      "repoName": "okhttp",
+      "stargazersCount": 43011,
+      "userName": "square",
+      "userPhoto": "https://avatars.githubusercontent.com/u/82592?v\u003d4"
+    },
+    {
+      "description": "The Kotlin Programming Language. ",
+      "forksCount": 5293,
+      "htmlUrl": "https://github.com/JetBrains/kotlin",
+      "id": 3432266,
+      "repoName": "kotlin",
+      "stargazersCount": 42870,
+      "userName": "JetBrains",
+      "userPhoto": "https://avatars.githubusercontent.com/u/878437?v\u003d4"
+    },
+    {
+      "description": "A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.",
+      "forksCount": 11297,
+      "htmlUrl": "https://github.com/android/architecture-samples",
+      "id": 51148780,
+      "repoName": "architecture-samples",
+      "stargazersCount": 41618,
+      "userName": "android",
+      "userPhoto": "https://avatars.githubusercontent.com/u/32689599?v\u003d4"
+    },
+    {
+      "description": "A shadowsocks client for Android",
+      "forksCount": 11595,
+      "htmlUrl": "https://github.com/shadowsocks/shadowsocks-android",
+      "id": 7190986,
+      "repoName": "shadowsocks-android",
+      "stargazersCount": 32959,
+      "userName": "shadowsocks",
+      "userPhoto": "https://avatars.githubusercontent.com/u/3006190?v\u003d4"
+    },
+    {
+      "description": "Alibaba Java Coding Guidelines pmd implements and IDE plugin",
+      "forksCount": 7764,
+      "htmlUrl": "https://github.com/alibaba/p3c",
+      "id": 95189138,
+      "repoName": "p3c",
+      "stargazersCount": 28318,
+      "userName": "alibaba",
+      "userPhoto": "https://avatars.githubusercontent.com/u/1961952?v\u003d4"
+    },
+    {
+      "description": "A memory leak detection library for Android.",
+      "forksCount": 3906,
+      "htmlUrl": "https://github.com/square/leakcanary",
+      "id": 34824499,
+      "repoName": "leakcanary",
+      "stargazersCount": 27932,
+      "userName": "square",
+      "userPhoto": "https://avatars.githubusercontent.com/u/82592?v\u003d4"
+    },
+    {
+      "description": "翻墙-科学上网",
+      "forksCount": 5818,
+      "htmlUrl": "https://github.com/bannedbook/fanqiang",
+      "id": 29219243,
+      "repoName": "fanqiang",
+      "stargazersCount": 27044,
+      "userName": "bannedbook",
+      "userPhoto": "https://avatars.githubusercontent.com/u/4361923?v\u003d4"
+    },
+    {
+      "description": "Samples for Android Architecture Components. ",
+      "forksCount": 8212,
+      "htmlUrl": "https://github.com/android/architecture-components-samples",
+      "id": 90792131,
+      "repoName": "architecture-components-samples",
+      "stargazersCount": 22280,
+      "userName": "android",
+      "userPhoto": "https://avatars.githubusercontent.com/u/32689599?v\u003d4"
+    },
+    {
+      "description": "The Google I/O Android App",
+      "forksCount": 6280,
+      "htmlUrl": "https://github.com/google/iosched",
+      "id": 18347476,
+      "repoName": "iosched",
+      "stargazersCount": 21654,
+      "userName": "google",
+      "userPhoto": "https://avatars.githubusercontent.com/u/1342004?v\u003d4"
+    },
+    {
+      "description": "😍 A beautiful, fluid, and extensible dialogs API for Kotlin \u0026 Android.",
+      "forksCount": 3153,
+      "htmlUrl": "https://github.com/afollestad/material-dialogs",
+      "id": 26102180,
+      "repoName": "material-dialogs",
+      "stargazersCount": 19412,
+      "userName": "afollestad",
+      "userPhoto": "https://avatars.githubusercontent.com/u/1820165?v\u003d4"
+    },
+    {
+      "description": "Free and open source manga reader for Android.",
+      "forksCount": 2256,
+      "htmlUrl": "https://github.com/tachiyomiorg/tachiyomi",
+      "id": 43807251,
+      "repoName": "tachiyomi",
+      "stargazersCount": 19094,
+      "userName": "tachiyomiorg",
+      "userPhoto": "https://avatars.githubusercontent.com/u/53302311?v\u003d4"
+    },
+    {
+      "description": "A powerful image downloading and caching library for Android",
+      "forksCount": 4030,
+      "htmlUrl": "https://github.com/square/picasso",
+      "id": 10057936,
+      "repoName": "picasso",
+      "stargazersCount": 18380,
+      "userName": "square",
+      "userPhoto": "https://avatars.githubusercontent.com/u/82592?v\u003d4"
+    },
+    {
+      "description": "Flexbox for Android ",
+      "forksCount": 1816,
+      "htmlUrl": "https://github.com/google/flexbox-layout",
+      "id": 58034548,
+      "repoName": "flexbox-layout",
+      "stargazersCount": 17626,
+      "userName": "google",
+      "userPhoto": "https://avatars.githubusercontent.com/u/1342004?v\u003d4"
+    },
+    {
+      "description": "A rule-based tunnel for Android.",
+      "forksCount": 2047,
+      "htmlUrl": "https://github.com/Kr328/ClashForAndroid",
+      "id": 221809776,
+      "repoName": "ClashForAndroid",
+      "stargazersCount": 16879,
+      "userName": "Kr328",
+      "userPhoto": "https://avatars.githubusercontent.com/u/39107975?v\u003d4"
+    },
+    {
+      "description": "A V2Ray client for Android, support Xray core and v2fly core",
+      "forksCount": 2871,
+      "htmlUrl": "https://github.com/2dust/v2rayNG",
+      "id": 186733095,
+      "repoName": "v2rayNG",
+      "stargazersCount": 16843,
+      "userName": "2dust",
+      "userPhoto": "https://avatars.githubusercontent.com/u/31833384?v\u003d4"
+    },
+    {
+      "description": "An Android app which provides design news \u0026 inspiration as well as being an example of implementing material design.",
+      "forksCount": 3248,
+      "htmlUrl": "https://github.com/nickbutcher/plaid",
+      "id": 45261969,
+      "repoName": "plaid",
+      "stargazersCount": 16241,
+      "userName": "nickbutcher",
+      "userPhoto": "https://avatars.githubusercontent.com/u/352556?v\u003d4"
+    },
+    {
+      "description": "A gardening app illustrating Android development best practices with Android Jetpack.",
+      "forksCount": 4259,
+      "htmlUrl": "https://github.com/android/sunflower",
+      "id": 134505361,
+      "repoName": "sunflower",
+      "stargazersCount": 16188,
+      "userName": "android",
+      "userPhoto": "https://avatars.githubusercontent.com/u/32689599?v\u003d4"
+    },
+    {
+      "description": "Pleasant Android application development",
+      "forksCount": 1299,
+      "htmlUrl": "https://github.com/Kotlin/anko",
+      "id": 24186761,
+      "repoName": "anko",
+      "stargazersCount": 15941,
+      "userName": "Kotlin",
+      "userPhoto": "https://avatars.githubusercontent.com/u/1446536?v\u003d4"
+    },
+    {
+      "description": "Official Jetpack Compose samples.",
+      "forksCount": 3112,
+      "htmlUrl": "https://github.com/android/compose-samples",
+      "id": 211288349,
+      "repoName": "compose-samples",
+      "stargazersCount": 13341,
+      "userName": "android",
+      "userPhoto": "https://avatars.githubusercontent.com/u/32689599?v\u003d4"
+    },
+    {
+      "description": "A sample audio app for Android",
+      "forksCount": 3687,
+      "htmlUrl": "https://github.com/android/uamp",
+      "id": 31929346,
+      "repoName": "uamp",
+      "stargazersCount": 12663,
+      "userName": "android",
+      "userPhoto": "https://avatars.githubusercontent.com/u/32689599?v\u003d4"
+    },
+    {
+      "description": "Android开发人员不得不收集的工具类集合 | 支付宝支付 | 微信支付（统一下单） | 微信分享 | Zip4j压缩（支持分卷压缩与加密） | 一键集成UCrop选择圆形头像 | 一键集成二维码和条形码的扫描与生成 | 常用Dialog | WebView的封装可播放视频 | 仿斗鱼滑动验证码 | Toast封装 | 震动 | GPS | Location定位 | 图片缩放 | Exif 图片添加地理位置信息（经纬度） | 蛛网等级 | 颜色选择器 | ArcGis | VTPK | 编译运行一下说不定会找到惊喜",
+      "forksCount": 2847,
+      "htmlUrl": "https://github.com/Tamsiree/RxTool",
+      "id": 69093112,
+      "repoName": "RxTool",
+      "stargazersCount": 11816,
+      "userName": "Tamsiree",
+      "userPhoto": "https://avatars.githubusercontent.com/u/17683613?v\u003d4"
+    },
+    {
+      "description": "The flexible, easy to use, all in one drawer library for your Android project. Now brand new with material 2 design.",
+      "forksCount": 2083,
+      "htmlUrl": "https://github.com/mikepenz/MaterialDrawer",
+      "id": 30120110,
+      "repoName": "MaterialDrawer",
+      "stargazersCount": 11570,
+      "userName": "mikepenz",
+      "userPhoto": "https://avatars.githubusercontent.com/u/1476232?v\u003d4"
+    },
+    {
+      "description": "Library support for Kotlin coroutines ",
+      "forksCount": 1641,
+      "htmlUrl": "https://github.com/Kotlin/kotlinx.coroutines",
+      "id": 61722736,
+      "repoName": "kotlinx.coroutines",
+      "stargazersCount": 11346,
+      "userName": "Kotlin",
+      "userPhoto": "https://avatars.githubusercontent.com/u/1446536?v\u003d4"
+    },
+    {
+      "description": "An Android Animation library which easily add itemanimator to RecyclerView items.",
+      "forksCount": 1967,
+      "htmlUrl": "https://github.com/wasabeef/recyclerview-animators",
+      "id": 28340997,
+      "repoName": "recyclerview-animators",
+      "stargazersCount": 11134,
+      "userName": "wasabeef",
+      "userPhoto": "https://avatars.githubusercontent.com/u/1833474?v\u003d4"
+    },
+    {
+      "description": "Legado 3.0 Book Reader with powerful controls \u0026 full functions❤️阅读3.0, 阅读是一款可以自定义来源阅读网络内容的工具，为广大网络文学爱好者提供一种方便、快捷舒适的试读体验。",
+      "forksCount": 1934,
+      "htmlUrl": "https://github.com/gedoor/legado",
+      "id": 187961907,
+      "repoName": "legado",
+      "stargazersCount": 11010,
+      "userName": "gedoor",
+      "userPhoto": "https://avatars.githubusercontent.com/u/22701807?v\u003d4"
+    },
+    {
+      "description": "高效率 QQ 机器人支持库",
+      "forksCount": 2324,
+      "htmlUrl": "https://github.com/mamoe/mirai",
+      "id": 201025777,
+      "repoName": "mirai",
+      "stargazersCount": 10644,
+      "userName": "mamoe",
+      "userPhoto": "https://avatars.githubusercontent.com/u/52516275?v\u003d4"
+    },
+    {
+      "description": "Framework for quickly creating connected applications in Kotlin with minimal effort",
+      "forksCount": 863,
+      "htmlUrl": "https://github.com/ktorio/ktor",
+      "id": 40136600,
+      "repoName": "ktor",
+      "stargazersCount": 10379,
+      "userName": "ktorio",
+      "userPhoto": "https://avatars.githubusercontent.com/u/28214161?v\u003d4"
+    },
+    {
+      "description": "Make a cool intro for your Android app.",
+      "forksCount": 1765,
+      "htmlUrl": "https://github.com/AppIntro/AppIntro",
+      "id": 36814724,
+      "repoName": "AppIntro",
+      "stargazersCount": 10220,
+      "userName": "AppIntro",
+      "userPhoto": "https://avatars.githubusercontent.com/u/46841574?v\u003d4"
+    },
+    {
+      "description": "A curated list of awesome Kotlin related stuff Inspired by awesome-java. ",
+      "forksCount": 1150,
+      "htmlUrl": "https://github.com/KotlinBy/awesome-kotlin",
+      "id": 40936978,
+      "repoName": "awesome-kotlin",
+      "stargazersCount": 10148,
+      "userName": "KotlinBy",
+      "userPhoto": "https://avatars.githubusercontent.com/u/17604656?v\u003d4"
+    },
+    {
+      "description": "A logger with a small, extensible API which provides utility on top of Android\u0027s normal Log class.",
+      "forksCount": 939,
+      "htmlUrl": "https://github.com/JakeWharton/timber",
+      "id": 11495787,
+      "repoName": "timber",
+      "stargazersCount": 9763,
+      "userName": "JakeWharton",
+      "userPhoto": "https://avatars.githubusercontent.com/u/66577?v\u003d4"
+    }
+  ]
+}
