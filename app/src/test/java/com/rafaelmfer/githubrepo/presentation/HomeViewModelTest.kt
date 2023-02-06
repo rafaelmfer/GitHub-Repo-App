@@ -28,15 +28,15 @@ class HomeViewModelTest {
     @get:Rule
     var mainCoroutineRule = MainCoroutineRule()
 
-    private lateinit var weatherForecastRepository: FakeGitHubRepository
+    private lateinit var gitHubRepository: FakeGitHubRepository
 
     // Class under test
     private lateinit var homeViewModel: HomeViewModel
 
     @Before
     fun setUp() {
-        weatherForecastRepository = FakeGitHubRepository()
-        homeViewModel = HomeViewModel(weatherForecastRepository)
+        gitHubRepository = FakeGitHubRepository()
+        homeViewModel = HomeViewModel(gitHubRepository)
     }
 
     @After
@@ -62,7 +62,7 @@ class HomeViewModelTest {
     fun `get repos _ show loading and then error`() {
         mainCoroutineRule.runBlockingTest {
             //GIVEN
-            weatherForecastRepository.shouldReturnError(true)
+            gitHubRepository.shouldReturnError(true)
 
             //WHEN
             mainCoroutineRule.pauseDispatcher()
@@ -90,13 +90,13 @@ class HomeViewModelTest {
     fun `load more repos _ show error`() {
         mainCoroutineRule.runBlockingTest {
             //GIVEN
-            weatherForecastRepository.shouldReturnError(true)
+            gitHubRepository.shouldReturnError(true)
 
             //WHEN
             homeViewModel.loadMoreRepos()
 
             //THEN
-            MatcherAssert.assertThat(homeViewModel.reposLiveData.value, `is`(State.Success(FakeGitHubRepository.gitHubReposModel)))
+            MatcherAssert.assertThat(homeViewModel.loadMoreLiveData.value, `is`(State.Error(FakeGitHubRepository.GIT_HUB_REPOS_NOT_FOUND)))
         }
     }
 }

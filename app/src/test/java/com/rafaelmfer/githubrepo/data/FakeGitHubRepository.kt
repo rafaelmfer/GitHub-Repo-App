@@ -1,7 +1,9 @@
 package com.rafaelmfer.githubrepo.data
 
 import com.rafaelmfer.githubrepo.TestHelper
+import com.rafaelmfer.githubrepo.data.local.GitHubRepositoriesEntity
 import com.rafaelmfer.githubrepo.data.remote.response.GitHubRepositoriesResponse
+import com.rafaelmfer.githubrepo.data.remote.response.ItemResponse
 import com.rafaelmfer.githubrepo.data.repository.State
 import com.rafaelmfer.githubrepo.domain.model.GitHubRepositoriesModel
 import com.rafaelmfer.githubrepo.domain.repository.IGitHubRepository
@@ -33,5 +35,22 @@ class FakeGitHubRepository : IGitHubRepository {
         }
 
         return State.Success(gitHubReposModel)
+    }
+
+    override suspend fun getRepos(): GitHubRepositoriesEntity? {
+        //not implemented yet
+        return null
+    }
+
+    override suspend fun saveGitHubReposInfo(infoResponse: GitHubRepositoriesResponse) {
+        //not implemented yet
+    }
+
+    override suspend fun saveMoreReposInsideList(reposInfo: GitHubRepositoriesEntity, list: List<ItemResponse>) {
+        //not implemented yet
+    }
+
+    override suspend fun deleteGitHubReposInfo() {
+        //not implemented yet
     }
 }
